@@ -16,23 +16,21 @@ const TodoItem = ({ id, text, isCompleted }) => {
 
 	return (
 		<li key={id} className={styles.task}>
-			<div
-				className={isCompleted ? styles.checkboxCompleted : styles.checkbox}
-				onClick={() => onToggleTask(id)}
-			>
-				{isCompleted && <Check />}
+			<div className={styles.info} onClick={() => onToggleTask(id)}>
+				<div
+					className={isCompleted ? styles.checkboxCompleted : styles.checkbox}
+				>
+					{isCompleted && <Check size={20} />}
+				</div>
+				<div
+					className={styles.text}
+					style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}
+				>
+					{text}
+				</div>
 			</div>
-			<div
-				className={styles.text}
-				style={{ textDecoration: isCompleted ? 'line-through' : 'none' }}
-			>
-				{text}
-			</div>
-			<Trash
-				size={20}
-				onClick={() => onDeleteTask(id)}
-				className={styles.delete}
-			/>
+
+			<Trash onClick={() => onDeleteTask(id)} className={styles.delete} />
 		</li>
 	)
 }
