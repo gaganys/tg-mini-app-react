@@ -1,0 +1,37 @@
+.task {
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: var(--tg-theme-section-separator-color);
+
+	.checkboxCompleted {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid var(--tg-theme-button-color);
+		border-radius: 50%;
+		background: var(--tg-theme-button-color);
+
+		& svg {
+			color: #fff;
+		}
+	}
+
+	.checkbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid var(--tg-theme-button-color);
+		border-radius: 50%;
+
+		& svg {
+			color: #fff;
+		}
+	}
+
+	.delete {
+		cursor: pointer;
+		color: var(--tg-theme-destructive-text-color);
+	}
+}
