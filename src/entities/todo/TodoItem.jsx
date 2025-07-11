@@ -20,7 +20,9 @@ const TodoItem = ({ id, text, isCompleted }) => {
 				<div
 					className={isCompleted ? styles.checkboxCompleted : styles.checkbox}
 				>
-					{isCompleted && <Check size={20} />}
+					{isCompleted && (
+						<Check style={{ opacity: isCompleted ? 1 : 0 }} size={20} />
+					)}
 				</div>
 				<div
 					className={styles.text}
