@@ -2,7 +2,7 @@
 	display: flex;
 	flex: 1;
 	padding: 10px 15px;
-	border: 1px solid var(--tg-theme-bg-color);
-	border-radius: 5px;
+	border: 1px solid var(--tg-theme-section-separator-color);
+	border-radius: 0 0 5px 5px;
 	outline: none;
 }

@@ -1,3 +1,4 @@
+import { Plus } from 'lucide-react'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addTodo } from '../../entities/todo/todoSlice'
@@ -27,7 +28,7 @@ const AddTodoForm = () => {
 					setText(e.target.value)
 				}}
 			/>
-			<Button text={'Add'} onClick={onHandleSubmit} />
+			<Button text={<Plus />} onClick={onHandleSubmit} />
 		</form>
 	)
 }

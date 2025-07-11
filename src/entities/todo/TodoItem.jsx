@@ -28,7 +28,11 @@ const TodoItem = ({ id, text, isCompleted }) => {
 			>
 				{text}
 			</div>
-			<Trash onClick={() => onDeleteTask(id)} className={styles.delete} />
+			<Trash
+				size={20}
+				onClick={() => onDeleteTask(id)}
+				className={styles.delete}
+			/>
 		</li>
 	)
 }

@@ -6,6 +6,7 @@
 	border-bottom: 1px solid var(--tg-theme-section-separator-color);
 
 	.checkboxCompleted {
+		padding: 5px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -19,8 +20,8 @@
 	}
 
 	.checkbox {
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
