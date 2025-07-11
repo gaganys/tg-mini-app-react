@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTelegram } from '../shared/hooks/useTelegram'
+import Header from '../widgets/Header/Header'
 import './App.css'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<button onClick={onToggleButton}></button>
+			<button onClick={onToggleButton}> Изменить</button>
 		</>
 	)
 }
