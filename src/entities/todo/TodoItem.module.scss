@@ -5,31 +5,37 @@
 	align-items: center;
 	border-bottom: 1px solid var(--tg-theme-section-separator-color);
 
-	.checkboxCompleted {
-		padding: 5px;
+	.info {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		border: 1px solid var(--tg-theme-button-color);
-		border-radius: 50%;
-		background: var(--tg-theme-button-color);
+		gap: 20px;
 
-		& svg {
-			color: #fff;
+		.checkboxCompleted {
+			padding: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid var(--tg-theme-button-color);
+			border-radius: 50%;
+			background: var(--tg-theme-button-color);
+
+			& svg {
+				color: #fff;
+			}
 		}
-	}
 
-	.checkbox {
-		width: 30px;
-		height: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 1px solid var(--tg-theme-button-color);
-		border-radius: 50%;
+		.checkbox {
+			width: 30px;
+			height: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid var(--tg-theme-button-color);
+			border-radius: 50%;
 
-		& svg {
-			color: #fff;
+			& svg {
+				color: #fff;
+			}
 		}
 	}
 
