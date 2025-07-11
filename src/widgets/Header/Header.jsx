@@ -8,6 +8,7 @@ const Header = () => {
 	return (
 		<div className={styles.header}>
 			<Button onClick={onClose} text={'Закрыть'} />
+			<span className={styles.text}>TodoList by</span>
 			<span className={styles.username}>{user?.username}</span>
 		</div>
 	)
