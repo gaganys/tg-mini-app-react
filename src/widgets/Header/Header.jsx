@@ -1,5 +1,5 @@
 import { useTelegram } from '../../shared/hooks/useTelegram'
-import Button from '../../shared/ui/Button'
+import Button from '../../shared/ui/Button/Button'
 import styles from './Header.module.scss'
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
 
 	return (
 		<div className={styles.header}>
-			<Button onClick={onClose} text={'Закрыть'} />
+			<Button onClick={onClose} text={'Close'} />
 			<span className={styles.text}>TodoList by</span>
 			<span className={styles.username}>{user?.username}</span>
 		</div>

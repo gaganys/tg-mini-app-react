@@ -1,10 +1,10 @@
 import React from 'react'
+import Todo from '../pages/todo/Todo'
 import { useTelegram } from '../shared/hooks/useTelegram'
-import Header from '../widgets/Header/Header'
 import './App.css'
 
 function App() {
-	const { tg, onToggleButton } = useTelegram()
+	const { tg } = useTelegram()
 
 	React.useEffect(() => {
 		tg.ready()
@@ -12,8 +12,7 @@ function App() {
 
 	return (
 		<>
-			<Header />
-			<button onClick={onToggleButton}> Изменить</button>
+			<Todo />
 		</>
 	)
 }
